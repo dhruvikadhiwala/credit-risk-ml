@@ -46,6 +46,34 @@ This project uses supervised and unsupervised learning techniques (Logistic Regr
 ## Setup Instructions
 1. Install Dependencies
 2. Setup Environment - Create and activate a virtual environment (optional but recommended)
-3. 
+
+## How To Use
+1. Data Processing - To load and normalize the data run python credit_risk/dataset.py
+2. Run EDA - Navigate to notebooks/eda.ipynb to explore distributions, correlations, and class balance.
+3. Train Models - Run python -m credit_risk.modeling.train. This will train all models on normalized_data.csv. This save outputs to reports/model_outputs.csv, reports/figures/feature_importance.png, reports/model_comparison.csv, and reports/hybrid_model_results.csv.
+
+## Key Features
+1. Logistic Regression: High interpretability
+2. Random Forest: Captures nonlinear patterns
+3. Isolation Forest: Unsupervised novelty detection
+4. Hybrid Approach: Combines unsupervised & supervised methods
+5. AUPRC, Ranking, FPR: Comprehensive evaluation metrics
+6. Threshold Analysis: Customizable decision thresholds
+
+## Reproducibility 
+Every script is designed to:
+1. Use consistent input/output directories
+2. Be reusable & independent
+3. Save logs for traceability
+
+## Dependencies 
+1. Python 3.9+
+2. pandas
+3. scikit-learn
+4. seaborn
+5. matplotlib
+6. loguru
+7. imbalanced-learn
+8. typer
 --------
 
