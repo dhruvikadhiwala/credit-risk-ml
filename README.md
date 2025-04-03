@@ -51,7 +51,7 @@ This project uses supervised and unsupervised learning techniques (Logistic Regr
 ## How To Use
 1. Data Processing - To load and normalize the data run python credit_risk/dataset.py
 2. Run EDA - Navigate to notebooks/eda.ipynb to explore distributions, correlations, and class balance.
-3. Train Models - Run python -m credit_risk.modeling.train. This will train all models on normalized_data.csv. This save outputs to reports/model_outputs.csv, reports/figures/feature_importance.png, reports/model_comparison.csv, and reports/hybrid_model_results.csv.
+3. Train Models - Run python -m credit_risk.modeling.train. This will train all models on normalized_data.csv. This saves outputs to reports/model_outputs.csv, reports/figures/feature_importance.png, reports/model_comparison.csv, and reports/hybrid_model_results.csv.
 
 ## Key Features
 1. Logistic Regression: Simple & interpretable
