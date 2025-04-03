@@ -6,56 +6,43 @@
 
 Machine Learning for credit  default prediction with Lending Club Data
 
+This project uses supervised and unsupervised learning techniques (Logistic Regression, Random Forest, Isolation Forest) to predict credit default risk. It follows the Cookiecutter Data Science structure to promote reproducibility, modularity, and scalability.
+
 ## Project Organization
 
 ```
-├── LICENSE            <- Open-source license if one is chosen
-├── Makefile           <- Makefile with convenience commands like `make data` or `make train`
-├── README.md          <- The top-level README for developers using this project.
-├── data
-│   ├── external       <- Data from third party sources.
-│   ├── interim        <- Intermediate data that has been transformed.
-│   ├── processed      <- The final, canonical data sets for modeling.
-│   └── raw            <- The original, immutable data dump.
-│
-├── docs               <- A default mkdocs project; see www.mkdocs.org for details
-│
-├── models             <- Trained and serialized models, model predictions, or model summaries
-│
-├── notebooks          <- Jupyter notebooks. Naming convention is a number (for ordering),
-│                         the creator's initials, and a short `-` delimited description, e.g.
-│                         `1.0-jqp-initial-data-exploration`.
-│
-├── pyproject.toml     <- Project configuration file with package metadata for 
-│                         credit_risk and configuration for tools like black
-│
-├── references         <- Data dictionaries, manuals, and all other explanatory materials.
-│
-├── reports            <- Generated analysis as HTML, PDF, LaTeX, etc.
-│   └── figures        <- Generated graphics and figures to be used in reporting
-│
-├── requirements.txt   <- The requirements file for reproducing the analysis environment, e.g.
-│                         generated with `pip freeze > requirements.txt`
-│
-├── setup.cfg          <- Configuration file for flake8
-│
-└── credit_risk   <- Source code for use in this project.
-    │
-    ├── __init__.py             <- Makes credit_risk a Python module
-    │
-    ├── config.py               <- Store useful variables and configuration
-    │
-    ├── dataset.py              <- Scripts to download or generate data
-    │
-    ├── features.py             <- Code to create features for modeling
-    │
-    ├── modeling                
-    │   ├── __init__.py 
-    │   ├── predict.py          <- Code to run model inference with trained models          
-    │   └── train.py            <- Code to train models
-    │
-    └── plots.py                <- Code to create visualizations
-```
+├── LICENSE – Defines the legal terms for project reuse and distribution.
+├── Makefile - Contains convenient CLI commands for automation (e.g., make train, make data).
+├── README.md – Describes the project, its structure, and usage instructions.
+├── requirements.txt – Lists all Python dependencies required to run the project.
+├── pyproject.toml – Configuration files for code formatting, linting, and tool integrations.
+├── setup.cfg – Configuration files for code formatting, linting, and tool integrations.
+├── data/
+│   ├── raw/ – Stores the untouched dataset (cleaned_data.csv) as originally provided.
+│   │   └── cleaned_data.csv
+│   ├── processed/ – Holds the final transformed dataset (normalized_data.csv) ready for modeling.
+│   │   └── normalized_data.csv
+├── notebooks/ 
+│   └── eda.ipynb – Jupyter notebook used for exploratory data analysis, including visualizations and summary statistics.
+├── reports/
+│   ├── model_outputs.csv – Probability outputs for each model on the dataset.
+│   ├── model_comparison.csv – Summary of performance metrics across all models.
+│   ├── hybrid_model_results.csv – Final results using a hybrid anomaly-based approach.
+│   └── figures/ – Contains visualizations such as feature_importance.png and threshold_impact.png used for analysis and reporting.
+│       ├── feature_importance.png
+│       └── threshold_impact.png
+├── credit_risk/
+│   ├── __init__.py – Marks this directory as a Python package.
+│   ├── config.py – Stores global paths and project-level configurations.
+│   ├── dataset.py  – Loads the raw data, applies feature engineering (e.g., scaling, encoding), and outputs processed data.
+│   ├── features.py – Contains helper functions for transforming or selecting features.
+│   ├── plots.py  – Defines reusable functions for generating visualizations and plots.
+│   └── modeling/
+│       ├── __init__.py
+│       ├── train.py – Main script for training all models and saving results/figures.
+│       └── predict.py – Placeholder for inference logic on unseen data (e.g., future loan applications).
 
+```
+## Setup Instructions
 --------
 
