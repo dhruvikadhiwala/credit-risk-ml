@@ -44,5 +44,8 @@ This project uses supervised and unsupervised learning techniques (Logistic Regr
 
 ```
 ## Setup Instructions
+1. Install Dependencies
+2. Setup Environment - Create and activate a virtual environment (optional but recommended)
+3. 
 --------
 
