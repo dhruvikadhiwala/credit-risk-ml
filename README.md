@@ -44,8 +44,9 @@ This project uses supervised and unsupervised learning techniques (Logistic Regr
 
 ```
 ## Setup Instructions
-1. Install Dependencies
+1. Install Dependencies - Run pip install -r requirements.txt
 2. Setup Environment - Create and activate a virtual environment (optional but recommended)
+3. Train & Evaluate Models - Run python credit_risk/modeling/train.py
 
 ## How To Use
 1. Data Processing - To load and normalize the data run python credit_risk/dataset.py
