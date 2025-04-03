@@ -54,12 +54,12 @@ This project uses supervised and unsupervised learning techniques (Logistic Regr
 3. Train Models - Run python -m credit_risk.modeling.train. This will train all models on normalized_data.csv. This save outputs to reports/model_outputs.csv, reports/figures/feature_importance.png, reports/model_comparison.csv, and reports/hybrid_model_results.csv.
 
 ## Key Features
-1. Logistic Regression: High interpretability
+1. Logistic Regression: Simple & interpretable
 2. Random Forest: Captures nonlinear patterns
-3. Isolation Forest: Unsupervised novelty detection
+3. Isolation Forest: Unsupervised anomaly detection
 4. Hybrid Approach: Combines unsupervised & supervised methods
 5. AUPRC, Ranking, FPR: Comprehensive evaluation metrics
-6. Threshold Analysis: Customizable decision thresholds
+6. Threshold Analysis: Understand tradeoffs in risk classification
 
 ## Reproducibility 
 Every script is designed to:
