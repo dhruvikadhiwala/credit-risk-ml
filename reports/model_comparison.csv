@@ -1,0 +1,4 @@
+Model,Best Threshold,Avg Default Rank,Percentile Rank,AUPRC,FPR at 100% Recall,Flagged Loans (%),Default Detection Rate,Interpretability,Implementation Complexity
+Logistic Regression,0.01,1.0,0.001,1.0,0.0,0.183,1.0,High,Low
+Random Forest,0.001,1.0,0.001,1.0,0.0,0.039,1.0,Medium,Medium
+Isolation Forest,0.5,84.0,0.084,0.005952380952380952,0.0008300083000830008,6.15,1.0,Low,Medium
